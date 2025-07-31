@@ -16,6 +16,10 @@ Fast ENS integration analysis for hackathon projects. Analyzes 100+ repositories
 ## Quick Start
 
 ```bash
+# Clone the repository
+git clone https://github.com/ensdomains/ens-hackathon-tools.git
+cd ens-hackathon-tools
+
 # Install dependencies
 npm install
 
@@ -23,7 +27,13 @@ npm install
 npm run build
 
 # Run hackathon analyzer
-npm run analyze -- analyze -i examples/sample-data/projects.csv -o results.md
+npm run analyze -- analyze -i packages/analyzer/examples/sample-repos.csv -o results.md
+
+# Or test with a single repository
+npm run analyze -- single -u https://github.com/aaronjmars/contxdoteth
+
+# Validate input file format
+npm run analyze -- validate -i packages/analyzer/examples/sample-repos.csv
 ```
 
 ## Development

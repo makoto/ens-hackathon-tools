@@ -4,18 +4,43 @@ Fast ENS integration analysis for hackathon projects. Analyzes repositories to d
 
 ## Installation
 
-```bash
-# Install globally
-npm install -g @ens-hackathon/analyzer
+Clone the repository and build locally:
 
-# Or use in project
-npm install @ens-hackathon/analyzer
+```bash
+# Clone the repository
+git clone https://github.com/ensdomains/ens-hackathon-tools.git
+cd ens-hackathon-tools
+
+# Install dependencies
+npm install
+
+# Build the analyzer
+npm run build:analyzer
 ```
 
 ## CLI Usage
 
+### Option 1: Using npm scripts (Recommended)
 ```bash
-# Analyze from CSV file
+# From the root directory
+npm run analyze -- analyze -i packages/analyzer/examples/sample-repos.csv -o results.md
+pm run analyze -- single -u https://github.com/aaronjmars/contxdoteth
+npm run analyze -- validate -i packages/analyzer/examples/sample-repos.csv
+```
+### Option 2: Direct node execution
+```bash
+# From the root directory
+node packages/analyzer/dist/cli/index.js analyze -i projects.csv -o results.md
+node packages/analyzer/dist/cli/index.js single -u https://github.com/user/project
+```
+
+### Option 3: Global installation (Optional)
+```bash
+# From the root directory, after building
+cd packages/analyzer
+npm link
+
+# Now you can use globally
 ens-hackathon-analyzer analyze -i projects.csv -o results.md
 
 # Analyze single repository

@@ -1,0 +1,45 @@
+{
+  "name": "@ens-hackathon/analyzer",
+  "version": "1.0.0",
+  "description": "Fast ENS integration analysis for hackathon projects",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "ens-hackathon-analyzer": "dist/cli/index.js"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "build:watch": "tsc --build --watch",
+    "clean": "rm -rf dist",
+    "dev": "ts-node src/cli/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "glob": "^10.3.10",
+    "simple-git": "^3.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "ts-node": "^10.9.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ensdomains/ens-hackathon-tools.git",
+    "directory": "packages/analyzer"
+  },
+  "keywords": ["ens", "hackathon", "analysis", "ethereum"],
+  "author": "ENS Team",
+  "license": "MIT"
+}

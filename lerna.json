@@ -1,0 +1,16 @@
+{
+  "version": "independent",
+  "npmClient": "npm",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "message": "chore(release): publish",
+      "registry": "https://registry.npmjs.org/"
+    },
+    "version": {
+      "allowBranch": ["main", "master"],
+      "conventionalCommits": true
+    }
+  }
+}

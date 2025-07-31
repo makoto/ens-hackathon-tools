@@ -1,0 +1,11 @@
+project_name,repository_url,description
+Contx.eth,https://github.com/aaronjmars/contxdoteth,Twitter to AI identity conversion with custom CCIP-Read resolver
+Substream,https://github.com/blackicon-eth/substream-frontend,ENS payment streaming with multi-chain support
+Elara,https://github.com/RezaRahemtola/ETHGlobal-Cannes2025,One-click AI agent deployment with ENS identities
+GitVault,https://github.com/hackyguru/ethglobal-cannes,Developer reputation system tied to ENS identity
+Exzek,https://github.com/YofiY/exzek,AI assistant with ENS subname assignment
+Fluxo,https://github.com/Juiiceee/Fluxo-Global,AI-powered transaction agent with basic ENS
+StableRoute,https://github.com/jistro/StableRoute-contracts,Stablecoin payment routing using ENS
+Simple DApp,https://github.com/example/simple-dapp,Basic name resolution example
+NFT Marketplace,https://github.com/example/nft-marketplace,No ENS integration
+Token Swap,https://github.com/example/token-swap,DeFi swap without naming service
